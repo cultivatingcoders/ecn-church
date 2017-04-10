@@ -1,0 +1,145 @@
+body {
+    text-align: center;
+    background-color: darkturquoise;
+    padding-top: 85px;
+}
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+.tales {
+    width: 100%;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 525px !important;
+}
+.container {
+    font-size: 50px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.logo-container {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    color: darkturquoise;
+}
+#large {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+}
+#centers {
+    background-color: coral;
+    border-radius: 20px;
+    width: 385px;
+    height: 450px;
+}
+#summer {
+    background-color: teal;
+    border-radius: 20px;
+    width: 385px;
+    height: 450px;
+}
+#programs {
+    background-color: coral;
+    border-radius: 20px;
+    width: 385px;
+    height: 450px;
+}
+#retreat {
+    padding-left: 0;
+    border-radius: 20px;
+
+
+}
+.thumbnail {
+    align-self: center;
+    border-color: transparent;
+}
+.thumbnail {
+    width: 365px;
+    height: 210px;
+    border: 1px;
+    border: solid;
+    border-color: transparent;
+    background-color: transparent;
+}
+.thumbnail img {
+    width: 360px;
+    height: 203px;
+    border-radius: 20px;
+    padding-left: 0;
+
+
+}
+.logo-container {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+}
+.logo-container .btn {
+    background-color: black;
+}
+
+#bg {
+    background-position: center top;
+    padding: 20px 90px 20px 90px;
+}
+
+#search-container {
+    position: relative;
+}
+
+
+#search-bg {
+    /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+
+    /* Pull the background 70px higher to the same place as #bg's */
+    background-position: center -70px;
+
+    -webkit-filter: blur(10px);
+    filter: url('/media/blur.svg#blur');
+    filter: blur(10px);
+}
+
+#search {
+    /* Put this on top of the blurred layer */
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(35, 35, 35, 0.85); /* for IE */
+    background: rgba(43, 43, 43, 0.76);
+    color: white;
+}
+
+@media (max-width: 600px ) {
+    #bg { padding: 10px; }
+    #search-bg { background-position: center -10px; }
+}
+
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
+
+
+* {margin: 0; padding: 0;}

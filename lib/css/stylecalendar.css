@@ -1,0 +1,215 @@
+body{
+    font-family: 'Pontano Sans', sans-serif;
+    background-color: aqua;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+}
+header {
+    padding-top: 100px;
+}
+#buttonTop {
+    padding-bottom: 0;
+    align-items: center;
+}
+#ewe {
+    background-color: #c4f2f2;
+}
+#sjrb {
+    background-color: #e35dff;
+}
+#serb {
+    background-color: #6489ff;
+}
+#urb {
+    background-color: #5cff5b;
+}
+
+#calendar {
+    width: 100%;
+
+}
+#calendar a{
+    color: #0e0106;
+    text-decoration: none;
+}
+.calendar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    clear:both;
+    width:100%;
+}
+#calendar li{
+    display:block;
+    float:left;
+    width:14.2857142857%;
+    padding:5px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    margin-right:-1px;
+    margin-bottom:-1px;
+}
+#calendar ul.weekdays {
+    height:40px;
+    background-color: lightslategrey;
+}
+#calendar ul.weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    line-height:20px;
+    border:none !important;
+    padding:10px 6px;
+    color:#fff;
+    font-size:13px;
+}
+#calendar .days li{
+    height:230px;
+}
+#calendar .days li:hover{
+    background:#ccc;
+}
+#calendar .date{
+    text-allign:center;
+    margin-bottom:5px;
+    padding:5px;
+    background:#333;
+    color:#fff;
+    width:25px;
+    border-radius:50%;
+    float: right;
+}
+#calendar .event{
+    clear:both;
+    display:block;
+    font-size:13px;
+    border-radius:4px;
+    padding:5px;
+    margin-top: 40px;
+    margin-bottom:5px;
+    color: #0e0106;
+    line-height:14px;
+    background:#c4f2f2;
+    border:1px solid #b5dbdc;
+    text-decoration: none;
+}
+#calendar .event-utah{
+    clear:both;
+    display:block;
+    font-size:13px;
+    border-radius:4px;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom:5px;
+    color: #0e0106;
+    line-height:14px;
+    background: #5cff5b;
+    border:1px solid #b5dbdc;
+    text-decoration: none;
+}
+
+#calendar .event-ser{
+    clear:both;
+    display:block;
+    font-size:13px;
+    border-radius:4px;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom:5px;
+    color: #0e0106;
+    line-height:14px;
+    background: #6489ff;
+    border:1px solid #b5dbdc;
+    text-decoration: none;
+}
+#calendar .event-sjr{
+    clear:both;
+    display:block;
+    font-size:13px;
+    border-radius:4px;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom:5px;
+    color: #0e0106;
+    line-height:14px;
+    background: #e35dff;
+    border:1px solid #b5dbdc;
+    text-decoration: none;
+}
+
+#calendar .event-desc{
+    color:#666;
+    margin:3px 0 7px 0;
+    text-decoration: none;
+}
+#calendar .other-month{
+    background:#f5f5f5;
+    color:#666;
+}
+@media (max-width:768px) {
+#calendar .weekdays,#calendar .other-month{
+    display:none;
+    }
+    #calendar li{
+    height:auto !important;
+    border:1px solid #ededed;
+    width:100%;
+    padding:10px;
+    margin-bottom:-1px;
+    }
+    #calendar .date{
+        float:none;
+    }
+
+}
+
+#bg {
+    background-position: center top;
+    padding: 20px 90px 20px 90px;
+}
+
+#search-container {
+    position: relative;
+}
+
+
+#search-bg {
+    /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+
+    /* Pull the background 70px higher to the same place as #bg's */
+    background-position: center -70px;
+
+    -webkit-filter: blur(10px);
+    filter: url('/media/blur.svg#blur');
+    filter: blur(10px);
+}
+
+#search {
+    /* Put this on top of the blurred layer */
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    border-radius: 20px;
+
+    background: rgba(35, 35, 35, 0.85); /* for IE */
+    background: rgba(43, 43, 43, 0.76);
+    color: white;
+}
+
+@media (max-width: 600px ) {
+    #bg { padding: 10px; }
+    #search-bg { background-position: center -10px; }
+}
+
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
+
+
+* {margin: 0; padding: 0;}

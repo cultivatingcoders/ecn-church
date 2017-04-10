@@ -1,0 +1,162 @@
+.navbar {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+.navbar-right {
+    padding-right: 5%;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+
+#bg {
+    background-position: center top;
+    padding: 20px 90px 20px 90px;
+}
+
+#search-container {
+    position: relative;
+}
+
+
+#search-bg {
+    /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+
+    /* Pull the background 70px higher to the same place as #bg's */
+    background-position: center -70px;
+
+    -webkit-filter: blur(10px);
+    filter: url('/media/blur.svg#blur');
+    filter: blur(10px);
+}
+
+#search {
+    /* Put this on top of the blurred layer */
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    background: rgba(47, 47, 47, 0.67); /* for IE */
+    background: rgba(43, 43, 43, 0.44);
+    color: white;
+}
+
+@media (max-width: 600px ) {
+    #bg { padding: 10px; }
+    #search-bg { background-position: center -10px; }
+}
+
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
+
+
+* {margin: 0; padding: 0;}
+
+body {
+<!-- src: http://subtlepatterns.com/?p=1045 -->
+    background: url('dark_geometric.png');
+}
+
+.jumbotron {
+    background-color: teal;
+}
+#ecnMain {
+    background-color: teal;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainImg {
+    height: 800px;
+    width: 1400px;
+    align-content: center;
+}
+#bunnies {
+    background-size: cover;
+    background-color: black;
+    padding: 30px 50px 30px 50px;
+    height: 800px;
+    text-align: center;
+    background-position: center;
+    color: white;
+    background-image: url("/lib/img/002+(1).jpg");
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+}
+#flower {
+    background-color: darkslategray;
+}
+
+.circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 175px;
+    background-color: aqua;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+.thumbnail {
+    width: 365px;
+    height: 210px;
+    padding: 1px;
+    border: 1px;
+    border: solid;
+    border-color: black;
+    background-color: transparent;
+}
+#text {
+    text-align: left;
+}
+#bulliten {
+    padding-top: 35%;
+}
+#logo {
+    padding-top: 5%;
+}
+#logoimg {
+    width: 300px;
+    height: 300px;
+    border: 0 none;
+    box-shadow: none;
+    background: transparent;
+}
+.state {
+    color: deepskyblue;
+}
+
+#bunniesjoe {
+    background-size: cover;
+    background-color: black;
+    padding: 30px 50px 30px 50px;
+    height: 800px;
+    text-align: center;
+    background-position: center;
+    color: white;
+    background-image: url("/lib/img/stjoes.jpg");
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+}
+
+
+.row.no-pad.img-responsive{
+    margin-right:0px;
+    margin-left:0px;
+    border:none;
+}
+
+#welcome {
+    padding-top: 20%;
+}
+
+h3 {
+    font-size: 35px;
+    padding-top: 15%;
+    font-color: black;
+}
