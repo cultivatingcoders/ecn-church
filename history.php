@@ -121,14 +121,14 @@
             </div>
         </div>
     </div>
-can you see this?
+
 
     <ol class="breadcrumb">
         <li><a href="index.php">Home</a></li>
         <li><a href="areaMissContact.php">Area Mission Contact</a></li>
         <li><a href="calendarNew.php">Calendar</a></li>
         <li><a href="findaChurch.php">Find A Church</a></li>
-        <li><a href="missionsRetreats.php">Missions/Retreats</a></li>
+        <li><a href="missionsRetreats.php">Missions/Retreats/can you see this?</a></li>
         <li class="active"></li>
     </ol>
 </body>
